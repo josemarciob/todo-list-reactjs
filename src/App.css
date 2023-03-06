@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 768px;
+}
+
+body {
+  background-color: #151515;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #e6e6e6;
+}
+
+header {
+  width: 100%;
+  margin: 84px 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin-left: 7px;
+  border: 2px solid #a200ec;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.App .containerInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 18px;
+
+  background-color: #e6e6e6;
+  color: #4d0070;
+  border-radius: 5px;
+  border: none;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.App .add-btn {
+  padding: 16px;
+
+  background: #a200ec;
+  color: #ffffff;
+
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+  transition: all ease 0.2s;
+  font-size: 1.1rem;
+}
+
+.App .add-btn:hover {
+  transform: scale(1.1);
+}
+
+.App .addTasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.App ul .item .buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.App .noTasks {
+  font-size: 26px;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.App ul .done {
+  background: #4d0070;
+  border: solid rgb(34, 0, 54);
+}
+
+.App ul .item .delete-btn,
+.check-btn {
+  color: #9600db;
+  font-size: 20px;
+  padding: 5px;
+
+  transition: all ease 0.2s;
+}
+
+.App ul .item .delete-btn:hover,
+.check-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #7901b1;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+.App ul {
+  width: 105%;
+  list-style: none;
+}
+
+.App .item {
+  color: white;
+
+  padding: 16px;
+  font-size: 22px;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin: 1rem;
+
+  background-color: #a200ec;
+}
